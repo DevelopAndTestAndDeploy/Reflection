@@ -1,5 +1,6 @@
 import java.util.concurrent.Callable;
 
+@MyAnnotations(value1 = "123", value2 = "456")
 public class Calculator {
 
     private double num1;
@@ -26,7 +27,17 @@ public class Calculator {
         return num2;
     }
 
-    public void setNum2(double num2) {
+    public void setNum2(double num2)
+    {
         this.num2 = num2;
     }
+
+    public double sum(double n1, double n2) {
+        return n1+n2;
+
+
+    }
+
+
+
 }
